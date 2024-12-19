@@ -155,6 +155,7 @@ export const createLinkToken = async (user:User)=>{
 }
 
 
+
 export const createBankAccount = async ({
     userId,
     bankId,
@@ -249,6 +250,8 @@ export const exchangePublicToken = async ({
   }
 }
 
+// This function exchanges a public token for an access token and item ID
+
 
 export const getBanks = async ({ userId }: getBanksProps) => {
   try {
@@ -281,3 +284,5 @@ export const getBank = async ({ documentId }: getBankProps) => {
     console.log(error)
   }
 }
+
+

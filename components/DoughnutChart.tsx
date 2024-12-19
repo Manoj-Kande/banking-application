@@ -8,10 +8,10 @@ ChartJs.register(ArcElement, Tooltip, Legend);
 
 const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
   
-  console.log(accounts);
+  // console.log(accounts);
   const accountNames = accounts.map((a) => a.name);
   const balances = accounts.map((a) => a.currentBalance);
-  console.log(accountNames);
+  // console.log(accountNames);
   const data = {
     datasets: [
       {
